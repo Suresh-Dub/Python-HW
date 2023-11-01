@@ -1,11 +1,11 @@
-# Input
-N = int(input())
-country_stamps = set()
+'''rupal has a huge collection of country stamps.she decided to count the number of distinct stamps.
+Pick the stamps one by one from a stack of country stamps.find total number of distinct country stamps.
+Input format: first line containd integer N,total number of stamps.next N lines contain the name of country to which stamp belong.output the total stamps in a single line'''
+N = int(input("Enter the total number of stamps: "))
+stamps = set()
 
-# Collect distinct country stamps
 for _ in range(N):
-    country_name = input()
-    country_stamps.add(country_name)
+    stamp = input("Enter the name of the country to which the stamp belongs: ")
+    stamps.add(stamp)
 
-# Output
-print(len(country_stamps))
+print("Total number of distinct country stamps:", len(stamps))
